@@ -11,7 +11,7 @@ permalink: references/index.html
 - <sup>cVc</sup> [Transhumanism](http://www.transhumanism.org/index.php/WTA/more/huxley/) by Julian Huxley (1957)
 
 
-# Need to cite
+# Not finished reading through yet
 - http://www.grindhousewetware.com/
 - http://www.wired.com/2010/12/transcending-the-human-diy-style/
 - http://sensebridge.net/projects/northpaw/

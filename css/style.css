@@ -4650,7 +4650,8 @@ header {
   background-position: center center;
   overflow: hidden;
   position: relative;
-  z-index: 1; }
+  z-index: -1;
+  padding: 50px 0; }
   header h1 {
     font-size: 64px;
     font-weight: 600;
@@ -4687,3 +4688,25 @@ footer#site-footer {
   border-top: 1px solid #d9d9d9; }
   footer#site-footer .container {
     margin-top: 30px; }
+
+#main {
+  background: #FFF; }
+
+#site-nav {
+  font-size: 12px;
+  text-align: center;
+  border: none; }
+  #site-nav .navbar-collapse.collapse {
+    font-size: 0; }
+  #site-nav .navbar-nav {
+    float: none;
+    display: inline-block;
+    font-size: 12px; }
+
+[id]::before, [name]::before {
+  content: '';
+  height: 0;
+  padding-top: 50px;
+  margin-top: -50px;
+  display: block;
+  /* required for webkit browsers */ }

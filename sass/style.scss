@@ -88,7 +88,8 @@ header {
   background-position: center center;
   overflow: hidden;
   position: relative;
-  z-index: 1;
+  z-index: -1;
+  padding: 50px 0;
 
   h1 {
     font-size: $font-size-base*4;
@@ -148,4 +149,33 @@ footer#site-footer {
   //     lighten($palette-4, $pastel-factor), 
   //     lighten($palette-5, $pastel-factor));
   // }
+}
+
+#main {
+  background: #FFF;
+}
+
+#site-nav {
+  font-size: 12px;
+  text-align: center;
+  border: none;
+  .navbar-collapse.collapse {
+    font-size: 0;
+  }
+  .navbar-nav {
+    float: none;
+    display: inline-block;
+    font-size: 12px;
+  }
+}
+
+// SCROLL HACK
+// prevent the fixed navbar from obscuring 
+// same-page anchors when the browser scrolls to them.
+[id]::before, [name]::before {
+  content: '';
+  height: 0;
+  padding-top: $navbar-height;
+  margin-top: -$navbar-height;
+  display: block; /* required for webkit browsers */
 }
