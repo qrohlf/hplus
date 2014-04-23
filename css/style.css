@@ -253,6 +253,9 @@
 #physical {
   background-image: url('../images/legs.jpg'); }
 
+#media {
+  background-image: url('../images/hplus-media.jpg'); }
+
 #future {
   background-image: url('../images/future.jpg'); }
 
@@ -725,7 +728,7 @@ abbr[title], abbr[data-original-title] {
 blockquote {
   padding: 14px 28px;
   margin: 0 0 28px;
-  font-size: 20px;
+  font-size: 16px;
   border-left: 5px solid #eeeeee; }
   blockquote p:last-child, blockquote ul:last-child, blockquote ol:last-child {
     margin-bottom: 0; }
@@ -3230,8 +3233,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
         margin-right: 0; } }
 
 .navbar-default {
-  background-color: #038FD7;
-  border-color: #037ab6; }
+  background-color: #f8f8f8;
+  border-color: #e7e7e7; }
   .navbar-default .navbar-brand {
     color: #777; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -3246,7 +3249,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
-    background-color: #037ab6; }
+    background-color: #e7e7e7; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent; }
@@ -3257,9 +3260,9 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #888; }
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #037ab6; }
+    border-color: #e7e7e7; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #037ab6;
+    background-color: #e7e7e7;
     color: #555; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -3269,7 +3272,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: #555;
-      background-color: #037ab6; }
+      background-color: #e7e7e7; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
       background-color: transparent; } }
@@ -4615,11 +4618,6 @@ button.close {
 h1 {
   font-weight: 300; }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
 #site-content {
   background-color: #fff;
   position: relative;
@@ -4634,6 +4632,9 @@ img {
   margin-top: 20px; }
 .history .icomoon {
   font-size: 32px; }
+
+.site-gallery {
+  font-size: 14px; }
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -4651,7 +4652,7 @@ header {
   overflow: hidden;
   position: relative;
   z-index: -1;
-  padding: 50px 0; }
+  padding: 75px 0; }
   header h1 {
     font-size: 64px;
     font-weight: 600;
@@ -4706,7 +4707,10 @@ footer#site-footer {
 [id]::before, [name]::before {
   content: '';
   height: 0;
-  padding-top: 50px;
-  margin-top: -50px;
+  padding-top: 60px;
+  margin-top: -60px;
   display: block;
   /* required for webkit browsers */ }
+
+ul.reference-list :target {
+  font-weight: bold; }

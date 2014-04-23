@@ -19,7 +19,7 @@ $line-height-computed: 2*14px;
 $font-size-h2: 20px;
 $font-size-h3: 16px;
 
-$navbar-default-bg: #038FD7;
+$blockquote-font-size: $font-size-base;
 
 //== Container sizes
 //
@@ -49,7 +49,7 @@ h1 {
 }
 
 img {
-  @include img-responsive;
+  // @include img-responsive; //yep, bad idea
 }
 
 #site-content {
@@ -74,6 +74,10 @@ img {
   }
 }
 
+.site-gallery {
+  font-size: 14px;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -91,7 +95,7 @@ header {
   overflow: hidden;
   position: relative;
   z-index: -1;
-  padding: 50px 0;
+  padding: 75px 0;
 
   h1 {
     font-size: $font-size-base*4;
@@ -177,7 +181,11 @@ footer#site-footer {
 [id]::before, [name]::before {
   content: '';
   height: 0;
-  padding-top: $navbar-height;
-  margin-top: -$navbar-height;
+  padding-top: $navbar-height + 10px;
+  margin-top: -$navbar-height - 10px;
   display: block; /* required for webkit browsers */
+}
+
+ul.reference-list :target {
+  font-weight: bold;
 }
