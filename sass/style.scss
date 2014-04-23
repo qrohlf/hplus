@@ -1,6 +1,7 @@
 @import "pygments";
+@import "boom";
 // Reference bootstrap variables
-@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables";
+// @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables";
 @import "../bower_components/icomoon/style.css";
 // variable overrides
 $palette-1: #F0511F;
@@ -12,7 +13,8 @@ $header-background: #3DADD1;
 
 $font-family-sans-serif: open-sans, sans-serif;
 $headings-font-weight: 600;
-$line-height-base: 1.45;
+$font-size-base: 16px;
+$line-height-base: 1.6;
 $line-height-computed: 2*14px;
 $font-size-h2: 20px;
 $font-size-h3: 16px;
@@ -20,6 +22,7 @@ $font-size-h3: 16px;
 //== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
+$grid-gutter-width: 30px;
 
 // Small screen / tablet
 $container-tablet:             ((720px + $grid-gutter-width));
@@ -40,33 +43,30 @@ $container-lg:                 $container-tablet;
 
 h1 {
   font-weight: 300;
-  margin-top: 64px;
+  // margin-top: 64px;
 }
 
 img {
   @include img-responsive;
 }
 
-.site-content {
-  img.demo {
-    display: none;
-    margin: 40px 0px;
-    @media (min-width: $screen-sm-min) {
-      @include center-block;
-    }
-    border-style: solid;
-    background-color: #212121;
-    border-color: $palette-4;
-    border-width: 18px 1px 1px 1px;
-    border-radius: 5px;
-    padding: 2px;
+#site-content {
+  > .container {
+    padding: 64px 0;
   }
   background-color: #fff;
   position: relative;
   z-index: 99;
 }
 
-#history {
+.history {
+  h2 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .row {
+    margin-top: 20px;
+  }
   .icomoon {
     font-size: 32px;
   }
@@ -94,13 +94,14 @@ header {
     font-size: $font-size-base*4;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.21);
-    small {
-      font-size: $font-size-base*4;
-      font-weight: 300;
-      color: inherit;
-    }
   }
   h2 {
+    font-size: $font-size-base*4;
+    font-weight: 300;
+    color: inherit;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.21);
+  }
+  p.page-summary {
     font-weight: 300;
   }
   a, a:visited, a:hover {
@@ -122,7 +123,7 @@ body {
   margin-bottom: 80px + 60px; //::after is 12px high
 }
 
-footer {
+footer#site-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
