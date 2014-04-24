@@ -4704,7 +4704,7 @@ footer#site-footer {
     display: inline-block;
     font-size: 12px; }
 
-[id]::before, [name]::before {
+h1[id]::before, li[id]::before {
   content: '';
   height: 0;
   padding-top: 60px;

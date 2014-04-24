@@ -178,7 +178,7 @@ footer#site-footer {
 // SCROLL HACK
 // prevent the fixed navbar from obscuring 
 // same-page anchors when the browser scrolls to them.
-[id]::before, [name]::before {
+h1[id]::before, li[id]::before {
   content: '';
   height: 0;
   padding-top: $navbar-height + 10px;
