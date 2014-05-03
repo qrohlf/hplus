@@ -41,6 +41,8 @@ $container-large-desktop:      $container-tablet;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-tablet;
 
+$grid-float-breakpoint:     1100px; //$screen-md-min;
+
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
 
 h1 {
@@ -116,12 +118,8 @@ header {
     color: inherit;
   }
   > .container {
-    padding-top: 6rem;
-    padding-bottom: 4rem;
-    @media (min-width: $screen-md-min) {
-      padding-top: 8rem;
-      padding-bottom: 6rem;
-    }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -159,6 +157,7 @@ footer#site-footer {
 
 #main {
   background: #FFF;
+  word-break: break-word;
 }
 
 #site-nav {
