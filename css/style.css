@@ -4642,6 +4642,9 @@ h1 {
 .site-gallery {
   font-size: 14px; }
 
+iframe {
+  border: 0; }
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
